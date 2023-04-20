@@ -8,6 +8,8 @@ import Home from './companent-2/Home/Home'
 import Register from './companent-2/Register/Register'
 import Login from './companent-2/Login/Login'
 import AuthProvider from './Provider/AuthProvider'
+import Order from './companent-2/Order/Order'
+import PrivateRouter from './companent-2/Private/PrivateRouter'
 /* import Home from './companent/Home/Home'
 import Register from './companent/Register/Register'
 import Login from './companent/Login/Login'
@@ -50,6 +52,10 @@ const router = createBrowserRouter([
       {
         path: 'login',
         element: <Login/>
+      },
+      {
+        path: 'order',
+        element: <PrivateRouter><Order/></PrivateRouter>
       }
     ]
   }
